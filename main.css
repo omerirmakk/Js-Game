@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Press Start 2P", cursive;
+  cursor: cell;
+}
+
+.body2 {
+  background-color: rgb(134, 250, 26);
+  color: black;
+}
+
+.video-unv {
+  visibility: hidden;
+}
+
+.body3 {
+  color: white;
+  background-image: url(content/Enchanted-Castle-Hell-Dark-backdrops-High-quality-Computer-print-party-background.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+body .video {
+  position: absolute;
+  height: 1100px;
+  width: 1950px;
+  margin-top: -100px;
+  margin-left: -50px;
+  z-index: -99;
+  border: none;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.3em;
+}
+body header button {
+  width: 12em;
+  height: 3.5em;
+  font-size: 1.5em;
+  margin: 0.3em;
+}
+@media (max-width: 580px) {
+  body body .video {
+    position: relative;
+    height: 50%;
+    width: 50%;
+  }
+  body header button {
+    width: 5em;
+    height: 2em;
+    margin-left: 2em;
+    font-size: 1em;
+    letter-spacing: -3px;
+    text-align: left;
+  }
+  body header p {
+    font-size: 0.7em;
+    margin: 1em 2em 0 0;
+  }
+  body main {
+    text-align: center;
+  }
+  body main .main-content {
+    font-size: 1.5em;
+  }
+  body .container .first-content .message {
+    font-size: 1rem;
+  }
+  body .container .first-content .text-area .guess {
+    margin-left: 15%;
+    height: 2em;
+    width: 3em;
+  }
+  body .container .second-content .check {
+    width: 6.4em;
+    font-size: 1.4em;
+    margin-left: 1em;
+  }
+  body .container .second-content .scores {
+    position: absolute;
+  }
+  body .container .second-content .scores #score1,
+body .container .second-content .scores #hscore1 {
+    position: relative;
+    right: 13em;
+    font-size: 0.8em;
+  }
+}
+body main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main h1 {
+  margin-top: 1em;
+  margin-left: 1em;
+}
+body main .qmark {
+  height: 1.5em;
+  width: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  font-size: 4em;
+  margin-top: 1em;
+  position: relative;
+}
+body main .qmark::before {
+  content: "";
+  height: 5px;
+  width: 100vw;
+  background-color: white;
+  position: absolute;
+  z-index: -5;
+}
+body main .container {
+  margin-top: 10em;
+}
+body main .container .first-content {
+  display: flex;
+  align-items: flex-start;
+}
+body main .container .first-content .text-area input {
+  height: 2em;
+  width: 6em;
+  font-size: 3em;
+  text-align: center;
+  background-color: black;
+  color: white;
+  border: 3px solid white;
+}
+body main .container .first-content p {
+  margin-left: 4em;
+  font-size: 1.5em;
+}
+body main .container .second-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+body main .container .second-content button {
+  height: 2em;
+  width: 7em;
+  font-size: 2em;
+  margin-top: 1em;
+  margin-left: 40px;
+}
+body main .container .second-content .scores {
+  position: absolute;
+  left: 24em;
+}
+body main .container .second-content .scores p {
+  margin-bottom: 1em;
+  font-size: 1.2em;
+}/*# sourceMappingURL=main.css.map */

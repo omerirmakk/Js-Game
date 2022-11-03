@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Field</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body id="body">
+    <video class="video" autoplay loop muted plays-inline>
+      <source src="content/konfeti.mp4" />
+    </video>
+    <header>
+      <button id="again" onclick="refreshPage();">Again!</button>
+      <p>(Between 0 and 100)</p>
+    </header>
+    <main>
+      <h1 class="main-content">Guess My Number!</h1>
+      <div class="qmark">?</div>
+      <!---   -->
+      <div class="container">
+        <!---- Main Event   ---->
+        <div class="first-content">
+          <div class="text-area">
+            <input type="number" placeholder="NO" class="guess" />
+          </div>
+          <p class="message">
+            Start guessing... <br />
+            You have 10 chance
+          </p>
+        </div>
+        <div class="second-content">
+          <button class="check">Check!</button>
+
+          <div class="scores">
+            <p id="score1">💯 Score: <span class="score">10</span></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <button class="test">Hit Me</button>
+    <script src="javascr.js"></script>
+  </body>
+</html>
